@@ -1,0 +1,46 @@
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+header{
+    font-family: "Bitcount Grid Double", system-ui;
+}
+header img{
+    height: 30px;
+}
+footer{
+    margin-top: 100px;
+    background-color: gray;
+    color: white;
+}
+#carta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#carta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('img/background.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+}
+#carta > * {
+    position: relative;
+    z-index: 1;
+}
+#titulo{
+    font-family: 'Roboto', sans-serif;
+}
